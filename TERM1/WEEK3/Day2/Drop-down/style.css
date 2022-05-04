@@ -1,0 +1,71 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px 40px 10px 40px;
+}
+
+/* Dropdown Button */
+.dropbtn {    
+    background-color: orangered;
+    color: white;
+    width: 100%;
+    padding: 16px;
+    font-size: 18px;
+    font-style: bold;
+    border: none;
+    cursor: pointer;
+    box-shadow: 3px 3px 0px 0px rgba(0,0,0,0.1);
+  }
+  
+  /* Container for the dropdown menu */
+  .dropdown {
+    width: 250px;
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown items (hidden until hover) */
+  .dropdown-content {
+
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 250px;
+    min-width: 160px;
+    box-shadow: 3px 3px 0px 0px rgba(0,0,0,0.05);
+    z-index: 1;
+
+  }
+  
+  /* links in Dropdown menu */
+  .dropdown-content a {
+    text-align: center;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* change color of links on hover */
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+
+        /* Entry Animation */
+        animation-name: dropdownAnim;
+        animation-timing-function: .4s ease-out;
+        animation-duration: .4s;
+  }
+  
+  /* Button colour on hover */
+  .dropdown:hover .dropbtn {
+    background-color: goldenrod;
+   
+  }
+
+  /* Entry animation for the dropdown menu */
+  @keyframes dropdownAnim {
+    0%{opacity: 0; margin-top: -50px;}
+    100%{opacity: 1; margin-top: 0px;}
+  }

@@ -1,0 +1,47 @@
+@import "home";
+@import "variables";
+
+@mixin main-background($fontSize){
+    padding:20px;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-style: italic;
+    font-size: $fontSize;
+    color: $accentColour;
+    background-color: rgb(43, 43, 43);
+}
+
+body{
+    background-color: $backgroundColour;
+    padding: 40px;
+}
+
+
+h1{
+    color: $accentColour2;
+    font-family: "Poppins", sans-serif;
+    font-size: 55px;
+    margin-top: -15px;
+    margin-bottom: -15px;
+    &:hover{color: $fontColour;}
+}
+
+section {
+    background-color: $accentColour;
+    padding: 30px;
+}
+
+p{
+    font-family: "Poppins", sans-serif;
+    font-style: italic;
+    font-size: 30px;
+    color: $fontColour;
+    span{
+        color: $accentColour2;
+        font-style: bold;
+    }
+}
+
+header, footer {
+    @include main-background(90px);
+}

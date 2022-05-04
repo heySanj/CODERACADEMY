@@ -1,0 +1,445 @@
+// Import Variables, Fonts and Mixins
+@import "variables";
+@import "mixins";
+
+// Styling for phones and above
+
+// Header and Navbar styling
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-decoration: none;
+
+  height: 22vh;
+  padding-top: 5vh;
+
+  .pageTitle {
+    text-decoration: none;
+    font-family: $h1Font;
+    font-weight: 700;
+    font-size: 10vh;
+    text-align: center;
+    line-height: 90%;
+    letter-spacing: -0.07em;
+    color: $mainColour;
+  }
+
+  nav {
+    margin-top: 3vh;
+    a {
+      padding: 4px;
+      margin: 0 8px 0 8px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-size: 1.1em;
+      letter-spacing: 0em;
+      font-weight: 500;
+      color: $borderColour;
+      font-family: $mainFont;
+    }
+  }
+}
+
+// Body Styling
+body {
+  background-color: $backgroundColour;
+  margin: 0;
+  height: 100%;
+  justify-content: center;
+}
+
+// Main Content Container
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 2vh;
+
+  .card {
+    // Flexbox
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    overflow: hidden;
+    background-color: $borderColour;
+
+    // Sizing
+    height: 30vh;
+    margin-bottom: 5vh;
+    width: 90%;
+    border-radius: 10px;
+
+    // Decorative
+    background-color: $mainColour;
+    color: white;
+    outline: 3px solid $borderColour;
+    outline-offset: 5px;
+
+    // text-decoration needs to be here because .card is <a>
+    text-decoration: none;
+
+    // Text for the cards. Slide in on larger devices with a cursor.
+    .slideText {
+      background-color: $borderColour;
+      height: $slideTextHeight;
+      border-radius: 0 0 10px 10px;
+
+      text-align: center;
+      font-family: $h1Font;
+      font-size: 1.2em;
+
+      // Keep state after animation ends
+      animation-fill-mode: forwards;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      
+    }
+
+    // Image or Video styling for Card art
+    .mediaBox {
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      .media {
+        flex-grow: 1;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+// Footer styling
+footer {
+  // margin-top: auto;
+  height: 10vh;
+  text-align: center;
+  background-color: $borderColour;
+  color: wheat;
+  font-family: $mainFont;
+
+  p {
+    padding-top: 15px;
+  }
+}
+
+// Blog Styling
+.post {
+  width: 75%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  margin-top: 6vh;
+  padding: 8px;
+
+  // border style
+  border-radius: 10px;
+  outline: 3px solid $borderColour;
+  outline-offset: 5px;
+
+  .postImage {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    img,
+    video {
+      width: 100%;
+      border-radius: 10px;
+    }
+  }
+  .postText {
+    h1,
+    h4 {
+      margin: 5px 0 5px 0;
+      font-family: $h1Font;
+    }
+    p {
+      font-family: $mainFont;
+      font-size: 0.8em;
+      margin-top: 0;
+      text-align: justify;
+    }
+  }
+}
+
+// About Grid
+.aboutGrid {
+  width: 80%;
+  margin-top: 5vh;
+  // Text styling
+  h1,
+  h4 {
+    margin: 5px 0 5px 0;
+    font-family: $h1Font;
+  }
+  p {
+    font-family: $mainFont;
+    font-size: 0.8em;
+    margin-top: 0;
+    text-align: justify;
+  }
+
+  .profilePic {
+    @include borderStyle;
+
+    display: flex;
+    height: 35%;
+    padding: 18px;
+    img {
+      width: 100%;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+  }
+
+  .introText {
+    padding: 18px;
+    margin-top: 4vh;
+    @include borderStyle;
+  }
+
+  .skillsText {
+    padding: 18px;
+    margin-top: 4vh;
+    @include borderStyle;
+  }
+
+  .contact {
+    padding: 18px;
+    margin-top: 4vh;
+    @include borderStyle;
+  }
+}
+
+// Design Collage Styling
+#collage {
+  img {
+    height: 30vh;
+    max-width: 95%;
+    flex-grow: 1;
+    object-fit: cover;
+    margin: 10px;
+
+    // border & shadow styling
+    border-radius: 10px;
+    outline: 3px solid $borderColour;
+    box-shadow: 4px 4px 0 4px $borderColour;
+  }
+}
+
+// Styling for tablets and above
+@media (min-width: 481px) {
+  .container {
+    .card {
+      // Sizing
+      height: 35vh;
+      width: 80%;
+
+      // Decorative
+      outline: 3px solid $borderColour;
+      outline-offset: 5px;
+
+      // Text for the cards. Slide in on larger devices with a cursor.
+      .slideText {
+        font-size: 1.1em;
+      }
+    }
+  }
+
+  // Blog container styling for larger screens
+  #blogContainer {
+    margin-top: -5vh;
+
+    .post {
+      .postImage {
+        height: 55vh;
+
+        img,
+        video {
+          align-self: center;
+        }
+      }
+      .postText {
+        height: 100%;
+        font-size: 1em;
+      }
+    }
+  }
+
+  .aboutGrid {
+    margin-top: 0;
+  }
+}
+
+// Styling for larger screens and above
+@media (min-width: 1024px) {
+  header {
+    .pageTitle {
+      font-size: 12vh;
+    }
+  }
+  .container {
+    .card {
+      // Set card sizes for large screens
+      margin: 1.5vw;
+      height: 65vh;
+      min-width: 15%;
+      width: 18%;
+
+      outline-offset: 15px;
+
+      // Return border colour to normal when mouse leaves hover
+      outline-color: $borderColour;
+      transition: all 0.4s ease-out;
+
+      /* --- Title text that slides in when the Card container is hovered over --- */
+      .slideText {
+        height: $slideTextHeight;
+
+        font-size: 1.2em;
+
+        // Exit Animation
+        animation-name: slideTextDown;
+        animation-timing-function: 0.4s ease-out;
+        animation-duration: 0.4s;
+        background-color: $mainColour;
+      }
+
+      // display: flex;
+      // flex-direction: column;
+      // justify-content: flex-end;
+    }
+  }
+
+  // Blog container styling for larger screens
+  #blogContainer {
+    margin-top: -5vh;
+
+    .post {
+      justify-content: space-between;
+      align-items: stretch;
+      .postImage {
+        height: auto;
+        width: 48%;
+
+        // Resize image to fit the container while keeping ratio and cropping sides
+        img,
+        video {
+          height: 100%;
+          object-fit: cover;
+          object-position: center;
+        }
+      }
+      .postText {
+        width: 48%;
+        font-size: 1em;
+      }
+    }
+  }
+
+  #collage {
+    margin-top: -5vh;
+    img {
+      max-width: 100%;
+    }
+  }
+
+  // About me for larger screens
+  .aboutGrid {
+    display: grid;
+    grid-template-columns: 4fr 6fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 35px 35px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "profilePic introText"
+      "profilePic skillsText"
+      "profilePic contact";
+
+    // Text styling
+    h1,
+    h4 {
+      font-size: 2.5em;
+    }
+    p {
+      font-size: 1.4em;
+    }
+
+    .profilePic {
+      grid-area: profilePic;
+      height: auto; // Prevent image from breaking out of the grid layout
+    }
+
+    .introText {
+      grid-area: introText;
+      margin-top: 0;
+    }
+
+    .skillsText {
+      grid-area: skillsText;
+      margin-top: 0;
+    }
+
+    .contact {
+      grid-area: contact;
+      margin-top: 0;
+    }
+  }
+}
+
+// Styling for extra large screens and above
+@media (min-width: 1440px) {
+  header {
+    nav {
+      a {
+        padding: 15px;
+        text-decoration: none;
+        font-size: 1.6em;
+      }
+    }
+  }
+
+  .container {
+    .card {
+      // Set card sizes
+      margin: 1.5vw;
+      height: 65vh;
+      min-width: 15%;
+      width: 18%;
+
+      .slideText {
+        
+
+        font-size: 1.8em;
+
+      }
+    }
+  }
+
+  #blogContainer {
+    margin-top: -5vh;
+
+    .post {
+      justify-content: space-between;
+      align-items: stretch;
+      padding: 25px;
+      .postImage {
+        height: auto;
+        width: 30%;
+      }
+      .postText {
+        width: 68%;
+        font-size: 1.8em;
+      }
+    }
+  }
+}
+
+/* --- Animations imported at the end of the code --- */
+@import "animations";

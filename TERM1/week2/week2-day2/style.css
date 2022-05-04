@@ -1,0 +1,62 @@
+body{
+    background-color: beige;
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 4em;
+    text-align: center;
+    color: rgb(255, 125, 50);
+    text-shadow: 1px 1px rgb(179, 72, 2), 2px 2px rgb(122, 54, 8),  3px 3px rgb(66, 29, 3);
+}
+
+.mobile{
+    visibility: hidden;
+}
+
+
+.item{
+    width: 50px;
+    height: 50px;            
+}
+.flexContainer{
+    max-height: 100vh;
+    padding: 10px;
+    background-color: black;
+    display: flex;
+    width: 60%;
+    margin: auto;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    column-gap: 5px;
+    gap: 10px;
+
+    box-shadow: 4px 4px 14px rgb(46, 46, 46);
+}
+#one{
+    background-color: coral;
+}
+#two{
+    background-color: rgb(173, 255, 80);
+}
+#three{
+    background-color: rgb(80, 205, 255);
+}
+#four{
+    background-color: rgb(191, 108, 202);
+}
+
+
+
+@media only Screen and (max-width:400px){
+
+    body{
+        background-color: black;
+    }
+    .mobile{
+        visibility: visible;
+        color: red;
+    }
+
+}

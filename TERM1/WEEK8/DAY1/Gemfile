@@ -1,0 +1,12 @@
+# frozen_string_literal: true
+
+source "https://rubygems.org"
+
+
+
+# gem "rails"
+
+gem "tty-progressbar", "~> 0.18.2"
+gem "tty-prompt"
+gem "colorize"
+gem "faker", "~> 2.20"

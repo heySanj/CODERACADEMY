@@ -1,0 +1,127 @@
+  
+  #header,
+  #navigation,
+  #footer {
+    visibility: visible;
+  }
+
+  #container {
+    margin: 0 auto;
+    width: 100%;
+    background: #fff;
+  }
+
+  #header {
+    background: #ccc;
+    padding: 25px;
+    margin: -1%;
+    width: 100%;
+    position: fixed;
+  }
+
+  #header h1 {
+    margin: 0;
+    font-size: 85px;
+  }
+
+  #navigation {
+    font-size: 55px;
+    padding-top: 150px;
+    margin-bottom: 50px;
+    width: 100%;
+    background: #333;
+  }
+
+  #navigation ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  #navigation ul li {
+    list-style-type: none;
+  }
+
+  #navigation li a {
+    display: block;
+    padding: 5px 10px;
+    color: #fff;
+    text-decoration: none;
+    /* border-right: 1px solid #fff; */
+  }
+
+  #navigation li a:hover {
+    background: #383;
+  }
+
+  #content-container {
+    float: left;
+    text-align: justify;
+    width: 100%;
+    background: #fff;
+  }
+
+  #content {
+    clear: left;
+    float: left;
+    width: 100%;
+    /* padding: 20px 0;
+  margin: 0 0 0 4%; */
+    display: inline;
+    font-size: 25px;
+  }
+
+  #content h2 {
+    margin: 0;
+    font-size: 80px;
+  }
+
+  #aside {
+    display: none;
+    font-size: 25px;
+  }
+
+  #aside h3 {
+    margin: 0;
+  }
+
+  #footer {
+    font-size: 24px;
+    clear: left;
+    background: #ccc;
+    text-align: center;
+    padding: 20px;
+    height: 1%;
+  }
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  #header,
+  #navigation,
+  #footer {
+    visibility: visible;
+  }
+
+  #aside {
+    display: none;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  #header,
+  #navigation,
+  #footer {
+    display: none;
+  }
+
+  #aside {
+    visibility: visible;
+    /* float: right; */
+    width: 33%;
+    padding: 20px 0;
+    margin: 0 3% 0 0;
+    font-size: 25px;
+    display: block;
+  }
+}

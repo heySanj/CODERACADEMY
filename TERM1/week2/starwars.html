@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Marquee Tag</title>
+    <style>
+      body {
+        background-color: #292929;
+        background-image: url("images/stars.png");
+        color: #facf5a;
+        font-family: Arial;
+        line-height: 1.7em;
+        font-size: 1.3em;
+      }
+
+      .main {
+        max-width: 80%;
+        perspective: 1200px;
+        height: 100vh;
+        margin: 0 auto;
+      }
+      #rotate {
+          
+        width: 100%;
+        transform: rotateX(50deg);
+      }
+      .marq {
+        text-align: center;
+        padding: 5% 25% 5% 25%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="main">
+      <div id="rotate">
+        <marquee class="marq" direction="up" scrollamount="1.5">
+          <h1>Episode I</h1>
+          <h2>THE PHANTOM MENACE</h2>
+          <p>
+            Turmoil has engulfed the Galactic Republic. The taxation of trade
+            routes to outlying star systems is in dispute. Hoping to resolve the
+            matter with a blockade of deadly battleships, the greedy Trade
+            Federation has stopped all shipping to the small planet of Naboo.
+            While the Congress of the Republic endlessly debates this alarming
+            chain of events, the Supreme Chancellor has secretly dispatched two
+            Jedi Knights, the guardians of peace and justice in the galaxy, to
+            settle the conflict....
+          </p>
+        </marquee>
+      </div>
+    </div>
+  </body>
+</html>

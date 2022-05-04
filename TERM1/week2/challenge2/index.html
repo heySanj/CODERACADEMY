@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Layout</title>
+
+    <style>
+      body{
+          margin: 0;
+          padding: 0;
+          
+      }
+      .container {
+          width: 100vw;
+          height: 100vh;
+      }
+      .container div {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        border: 2px solid;
+        text-align: center;
+      }
+      #header {
+        background-color: rgb(87, 192, 169);
+        height: 10vh;
+        line-height: 10vh;
+      }
+      #sidebar {
+        background-color: rgb(255, 234, 44);
+        display: block;
+        float: left;
+        width: 28%;
+        height: 78vh;
+        line-height: 78vh;
+      }
+      #content {
+        background-color: rgb(153, 231, 80);
+        height: 78vh;
+        line-height: 78vh;
+
+      }
+      #footer {
+        background-color: rgb(84, 84, 184);
+        height: 10vh;
+        line-height: 10vh;
+        
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="header">Header</div>
+      <div id="sidebar">Sidebar</div>
+      <div id="content">Content</div>
+      <div id="footer">Footer</div>
+    </div>
+  </body>
+</html>

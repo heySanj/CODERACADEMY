@@ -1,0 +1,519 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&family=Raleway:wght@400;500;700&display=swap");
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  height: 22vh;
+  padding-top: 5vh;
+}
+
+header .pageTitle {
+  text-decoration: none;
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  font-size: 10vh;
+  text-align: center;
+  line-height: 90%;
+  letter-spacing: -0.07em;
+  color: #ff255b;
+}
+
+header nav {
+  margin-top: 3vh;
+}
+
+header nav a {
+  padding: 4px;
+  margin: 0 8px 0 8px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 1.1em;
+  letter-spacing: 0em;
+  font-weight: 500;
+  color: #313131;
+  font-family: "Raleway", sans-serif;
+}
+
+body {
+  background-color: #fceed4;
+  margin: 0;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 2vh;
+}
+
+.container .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  overflow: hidden;
+  background-color: #313131;
+  height: 30vh;
+  margin-bottom: 5vh;
+  width: 90%;
+  border-radius: 10px;
+  background-color: #ff255b;
+  color: white;
+  outline: 3px solid #313131;
+  outline-offset: 5px;
+  text-decoration: none;
+}
+
+.container .card .slideText {
+  background-color: #313131;
+  height: 25%;
+  border-radius: 0 0 10px 10px;
+  text-align: center;
+  font-family: "Fraunces", serif;
+  font-size: 1.2em;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .card .mediaBox {
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .card .mediaBox .media {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+footer {
+  height: 10vh;
+  text-align: center;
+  background-color: #313131;
+  color: wheat;
+  font-family: "Raleway", sans-serif;
+}
+
+footer p {
+  padding-top: 15px;
+}
+
+.post {
+  width: 75%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 6vh;
+  padding: 8px;
+  border-radius: 10px;
+  outline: 3px solid #313131;
+  outline-offset: 5px;
+}
+
+.post .postImage {
+  width: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.post .postImage img,
+.post .postImage video {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.post .postText h1,
+.post .postText h4 {
+  margin: 5px 0 5px 0;
+  font-family: "Fraunces", serif;
+}
+
+.post .postText p {
+  font-family: "Raleway", sans-serif;
+  font-size: 0.8em;
+  margin-top: 0;
+  text-align: justify;
+}
+
+.aboutGrid {
+  width: 80%;
+  margin-top: 5vh;
+}
+
+.aboutGrid h1,
+.aboutGrid h4 {
+  margin: 5px 0 5px 0;
+  font-family: "Fraunces", serif;
+}
+
+.aboutGrid p {
+  font-family: "Raleway", sans-serif;
+  font-size: 0.8em;
+  margin-top: 0;
+  text-align: justify;
+}
+
+.aboutGrid .profilePic {
+  border-radius: 10px;
+  outline: 3px solid #313131;
+  outline-offset: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 35%;
+  padding: 18px;
+}
+
+.aboutGrid .profilePic img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+
+.aboutGrid .introText {
+  padding: 18px;
+  margin-top: 4vh;
+  border-radius: 10px;
+  outline: 3px solid #313131;
+  outline-offset: 5px;
+}
+
+.aboutGrid .skillsText {
+  padding: 18px;
+  margin-top: 4vh;
+  border-radius: 10px;
+  outline: 3px solid #313131;
+  outline-offset: 5px;
+}
+
+.aboutGrid .contact {
+  padding: 18px;
+  margin-top: 4vh;
+  border-radius: 10px;
+  outline: 3px solid #313131;
+  outline-offset: 5px;
+}
+
+#collage img {
+  height: 30vh;
+  max-width: 95%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: 10px;
+  border-radius: 10px;
+  outline: 3px solid #313131;
+  -webkit-box-shadow: 4px 4px 0 4px #313131;
+          box-shadow: 4px 4px 0 4px #313131;
+}
+
+@media (min-width: 481px) {
+  .container .card {
+    height: 35vh;
+    width: 80%;
+    outline: 3px solid #313131;
+    outline-offset: 5px;
+  }
+  .container .card .slideText {
+    font-size: 1.1em;
+  }
+  #blogContainer {
+    margin-top: -5vh;
+  }
+  #blogContainer .post .postImage {
+    height: 55vh;
+  }
+  #blogContainer .post .postImage img,
+  #blogContainer .post .postImage video {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  #blogContainer .post .postText {
+    height: 100%;
+    font-size: 1em;
+  }
+  .aboutGrid {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  header .pageTitle {
+    font-size: 12vh;
+  }
+  .container .card {
+    margin: 1.5vw;
+    height: 65vh;
+    min-width: 15%;
+    width: 18%;
+    outline-offset: 15px;
+    outline-color: #313131;
+    -webkit-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
+    /* --- Title text that slides in when the Card container is hovered over --- */
+  }
+  .container .card .slideText {
+    height: 25%;
+    font-size: 1.2em;
+    -webkit-animation-name: slideTextDown;
+            animation-name: slideTextDown;
+    -webkit-animation-timing-function: 0.4s ease-out;
+            animation-timing-function: 0.4s ease-out;
+    -webkit-animation-duration: 0.4s;
+            animation-duration: 0.4s;
+    background-color: #ff255b;
+  }
+  #blogContainer {
+    margin-top: -5vh;
+  }
+  #blogContainer .post {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+  }
+  #blogContainer .post .postImage {
+    height: auto;
+    width: 48%;
+  }
+  #blogContainer .post .postImage img,
+  #blogContainer .post .postImage video {
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+  }
+  #blogContainer .post .postText {
+    width: 48%;
+    font-size: 1em;
+  }
+  #collage {
+    margin-top: -5vh;
+  }
+  #collage img {
+    max-width: 100%;
+  }
+  .aboutGrid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 4fr 6fr;
+        grid-template-columns: 4fr 6fr;
+    -ms-grid-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    gap: 35px 35px;
+    grid-auto-flow: row;
+        grid-template-areas: "profilePic introText" "profilePic skillsText" "profilePic contact";
+  }
+  .aboutGrid h1,
+  .aboutGrid h4 {
+    font-size: 2.5em;
+  }
+  .aboutGrid p {
+    font-size: 1.4em;
+  }
+  .aboutGrid .profilePic {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 1;
+    grid-area: profilePic;
+    height: auto;
+  }
+  .aboutGrid .introText {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: introText;
+    margin-top: 0;
+  }
+  .aboutGrid .skillsText {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: skillsText;
+    margin-top: 0;
+  }
+  .aboutGrid .contact {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+    grid-area: contact;
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 1440px) {
+  header nav a {
+    padding: 15px;
+    text-decoration: none;
+    font-size: 1.6em;
+  }
+  .container .card {
+    margin: 1.5vw;
+    height: 65vh;
+    min-width: 15%;
+    width: 18%;
+  }
+  .container .card .slideText {
+    font-size: 1.8em;
+  }
+  #blogContainer {
+    margin-top: -5vh;
+  }
+  #blogContainer .post {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    padding: 25px;
+  }
+  #blogContainer .post .postImage {
+    height: auto;
+    width: 30%;
+  }
+  #blogContainer .post .postText {
+    width: 68%;
+    font-size: 1.8em;
+  }
+}
+
+/* --- Animations imported at the end of the code --- */
+@media (min-width: 1024px) {
+  .card:hover {
+    outline-color: #ff255b;
+    -webkit-transition: 0.4s ease-out;
+    transition: 0.4s ease-out;
+    /* --- Show Card text on hover --- */
+  }
+  .card:hover .slideText {
+    /* Entry Animation */
+    -webkit-animation-name: slideTextUp;
+            animation-name: slideTextUp;
+    -webkit-animation-timing-function: 0.4s ease-out;
+            animation-timing-function: 0.4s ease-out;
+    -webkit-animation-duration: 0.4s;
+            animation-duration: 0.4s;
+    background-color: #ff255b;
+  }
+  .pageTitle:hover {
+    color: #ff9b18;
+    -webkit-transition: 0.2s ease-out;
+    transition: 0.2s ease-out;
+  }
+  nav a:hover {
+    outline: 3px solid #ff255b;
+    color: #ff255b;
+    -webkit-transition: 0.2s ease-out;
+    transition: 0.2s ease-out;
+  }
+}
+
+/* --- Entry Animation for the Card Text --- */
+@-webkit-keyframes slideTextUp {
+  0% {
+    display: block;
+    opacity: 0;
+    height: 0%;
+    background-color: #313131;
+  }
+  100% {
+    opacity: 1;
+    height: 25%;
+    background-color: #ff255b;
+  }
+}
+@keyframes slideTextUp {
+  0% {
+    display: block;
+    opacity: 0;
+    height: 0%;
+    background-color: #313131;
+  }
+  100% {
+    opacity: 1;
+    height: 25%;
+    background-color: #ff255b;
+  }
+}
+
+/* --- Exit Animation for the Card Text --- */
+@-webkit-keyframes slideTextDown {
+  0% {
+    opacity: 1;
+    height: 25%;
+    background-color: #ff255b;
+  }
+  100% {
+    opacity: 0;
+    height: 0%;
+    background-color: #313131;
+    display: none;
+  }
+}
+@keyframes slideTextDown {
+  0% {
+    opacity: 1;
+    height: 25%;
+    background-color: #ff255b;
+  }
+  100% {
+    opacity: 0;
+    height: 0%;
+    background-color: #313131;
+    display: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */

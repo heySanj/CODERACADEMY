@@ -1,0 +1,63 @@
+// Hover animations only on devices with a Cursor
+@media (min-width: 1024px) {
+  .card:hover {
+    // Highlight border on hover
+    outline-color: $mainColour;
+    transition: 0.4s ease-out;
+
+    
+
+    /* --- Show Card text on hover --- */
+    .slideText {
+
+      /* Entry Animation */
+      animation-name: slideTextUp;
+      animation-timing-function: 0.4s ease-out;
+      animation-duration: 0.4s;
+
+      background-color: $mainColour;
+    }
+  }
+
+  .pageTitle:hover {
+    color: rgb(255, 155, 24);
+    transition: 0.2s ease-out;
+  }
+
+  nav a:hover {
+    outline: 3px solid $mainColour;
+    color: $mainColour;
+    transition: 0.2s ease-out;
+  }
+}
+/* --- Entry Animation for the Card Text --- */
+@keyframes slideTextUp {
+  0% {
+    display: block;
+    opacity: 0;
+    height: 0%;
+    background-color: $borderColour;
+  }
+  100% {
+    opacity: 1;
+    height: $slideTextHeight;
+    background-color: $mainColour;
+  }
+}
+
+/* --- Exit Animation for the Card Text --- */
+@keyframes slideTextDown {
+  0% {
+    opacity: 1;
+    height: $slideTextHeight;
+    background-color: $mainColour;
+
+  }
+  100% {
+    opacity: 0;
+    height: 0%;
+    background-color: $borderColour;
+    
+    display: none;
+  }
+}
