@@ -1,0 +1,111 @@
+// Hover animations only on devices with a Cursor
+@media (min-width: 1024px) {
+
+  // Highlight Post border and title on hover
+  .post:hover {
+    
+    outline-color: $mainColour;
+
+    .postText {
+      .postTitle {
+        color: $mainColour;
+      }
+    }
+  }
+
+  // Show Link text when hovering over homepage cards
+  .card:hover {
+    // Highlight border on hover
+    outline-color: $mainColour;
+
+    // Show Card text on hover 
+    .slideText {
+
+      // Entry Animation      
+      animation-name: slideTextUp;
+      animation-timing-function: ease-out;
+      animation-duration: 0.3s;
+      background-color: $mainColour;
+    }
+  }
+
+  // Effect when hovering over page title
+  .pageTitle:hover {
+    color: $secondaryColour;
+    transition: 0.2s ease-out;
+  }
+
+  // Effect when hovering over Navbar links
+  nav a:hover {
+    color: $backgroundColour;
+    background-color: $secondaryColour;
+  }
+
+  // Zoom Images on collage hover
+  #collage {
+    .post {
+      img:hover {
+        outline-color: $mainColour;
+        transform: scale(1.5);
+      }
+    }
+  }
+
+  // Highlight sections on About page when hovering
+  .aboutGrid {
+    .profilePic:hover,
+    .introText:hover,
+    .skillsText:hover,
+    .contact:hover {
+      outline-color: $mainColour;
+      h1{
+        color: $mainColour;
+      }
+    }
+
+    .contact {
+      .flexContainer {
+        // Contact Links show label text on hover
+        .contactLink:hover {
+          background-color: $secondaryColour;
+          i {
+            display: none;
+          }
+          p {
+            display: flex;
+          }
+        }
+      }
+    }
+  }
+}
+// Entry Animation for the Card Text
+@keyframes slideTextUp {
+  0% {
+    display: block;
+    opacity: 0;
+    height: 0%;
+    background-color: $borderColour;
+  }
+  100% {
+    opacity: 1;
+    height: $slideTextHeight;
+    background-color: $mainColour;
+  }
+}
+
+// Exit Animation for the Card Text
+@keyframes slideTextDown {
+  0% {
+    opacity: 1;
+    height: $slideTextHeight;
+    background-color: $mainColour;
+  }
+  100% {
+    opacity: 0;
+    height: 0%;
+    background-color: $borderColour;
+    display: none;
+  }
+}
+

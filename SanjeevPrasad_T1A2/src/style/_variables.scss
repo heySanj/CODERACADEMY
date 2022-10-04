@@ -1,0 +1,23 @@
+// Import Fonts from Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&family=Raleway:wght@400;500;700&display=swap');
+
+// Colour Styling
+$backgroundColour: #fceed4;
+$borderColour: #313131;
+$mainColour: #ff255b;
+$secondaryColour: #462177;
+
+// Font Styling
+$mainFont: 'Raleway', sans-serif;
+
+$h1Font: 'Fraunces', serif;
+$h1Weight: 900;
+
+$h3Font: 'Raleway', sans-serif;
+$h3Weight: 600;
+
+$linkFont: 'Raleway', sans-serif;
+$linkWeight: 600;
+
+// Size of container for Slide Text element on homepage cards.
+$slideTextHeight: 25%;

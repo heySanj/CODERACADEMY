@@ -2,41 +2,66 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
-<html>
+<!--[if gt IE 8]>      <html class="no-js">  <![endif]-->
+<html lang="en">
   <head>
     <!-- Boilerplate HTML -->
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Sanjeev Prasad</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="style.css" />
+
+    <!-- Page Title and Icon -->
+    <title>Sanjeev Prasad</title>
+    <link rel="icon" type="image/png" href="./images/page-icon.png" />
+
+    <!-- Link to CSS Stylesheet-->
+    <link rel="stylesheet" href="./style/style.css" />
+
+    <!-- Link to FontAwesome for icons-->
+    <script
+      src="https://kit.fontawesome.com/1004139673.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
-  <header>
-    <a href="./index.html" class="pageTitle">Sanjeev.</a>
-    <nav>
-      <a href="./design.html">Design</a>
-      <a href="./coder.html">Coding</a>
-      <a href="./blog.html">Blog</a>
-      <a href="./about.html">About Me</a>
-    </nav>
-  </header>
-  <body>
+
+  <!-- BODY CONTENT -->
+  <body id="homeBody">
+
+    <!-- HEADER COMPONENT -->
+    <header>
+      <!-- Page Header -->
+      <a href="./index.html" class="pageTitle">Sanjeev.</a>
+      <!-- Navigation Menu -->
+      <nav>
+        <a href="./pages/design.html">Design</a>
+        <a href="./pages/coder.html">Coding</a>
+        <a href="./pages/blog.html">Blog</a>
+        <a href="./pages/about.html">About</a>
+      </nav>
+    </header>
+
+    <!-- MAIN CONTAINER COMPONENT -->
     <main class="container">
-      <a class="card" id="designCard" href="./design.html">
+      <!-- CARD COMPONENT displaying image/video and text. (Used as a portal to other pages)
+           This component will take the viewers to the Design Portfolio page. -->
+      <a class="card" href="./pages/design.html">
+        <!-- The mediaBox element holds the graphical content that displays on the card -->
         <div class="mediaBox">
           <img
-            src="https://sanjeevprasad.com/wp-content/uploads/2020/02/GUASA_HOODIE.jpg"
+            src="./images/softball_jersey.jpg"
             alt="Design Exmaple"
             class="media"
           />
         </div>
+        <!-- The slideText element displays what page the card links to. It slides up on hover on larger screens -->
         <div class="slideText">
           <h1>The Designer</h1>
         </div>
       </a>
-      <a class="card" id="coderCard" href="./coder.html">
+
+      <!-- CARD COMPONENT - Coding Portfolio Page -->
+      <a class="card" href="./pages/coder.html">
         <div class="mediaBox">
           <video
             class="media"
@@ -49,35 +74,59 @@
           <h1>The Coder</h1>
         </div>
       </a>
-      <a class="card" id="blogCard" href="./blog.html">
+
+      <!-- CARD COMPONENT - Blog Page -->
+      <a class="card" href="./pages/blog.html">
         <div class="mediaBox">
           <video
-          class="media"
-          src="./videos/words_loop.mp4"
-          autoplay
-          loop
-        ></video>
+            class="media"
+            src="./videos/space_loop.mp4"
+            autoplay
+            loop
+          ></video>
         </div>
         <div class="slideText">
           <h1>The Blogger</h1>
         </div>
       </a>
-      <a class="card" id="aboutCard" href="./about.html">
+
+      <!-- CARD COMPONENT - About Me Page -->
+      <a class="card" href="./pages/about.html">
         <div class="mediaBox">
           <img
-            src="./images/sanjeev_yellow.jpg"
+            src="./images/sanjeev.jpg"
             alt="Picture of Sanjeev"
             class="media"
           />
         </div>
-
         <div class="slideText">
-          <h1>The Person</h1>
+          <h1>The Man</h1>
         </div>
       </a>
     </main>
+
+    <!-- FOOTER COMPONENT -->
+    <footer>
+      <p>&copy; Sanjeev Prasad 2022</p>
+
+      <!-- SOCIAL LINKS COMPONENT (Displayed as icons) -->
+      <div class="footerSocials">
+        <a href="https://github.com/SanjeevCA/">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/heysanj/">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+        <a href="mailto:12109@coderacademy.edu.au">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+        <a href="./documents/SANJEEV_PRASAD_RESUME_2022.pdf">
+          <i class="fa-solid fa-file"></i>
+        </a>
+      </div>
+    </footer>
+
   </body>
-  <footer>
-    <p>&copy Sanjeev Prasad 2022</p>
-  </footer>
+
+
 </html>

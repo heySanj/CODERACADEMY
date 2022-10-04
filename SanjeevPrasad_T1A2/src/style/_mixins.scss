@@ -1,0 +1,8 @@
+// Border styling around content
+@mixin borderStyle{
+
+    // What type of border style to apply
+    border-radius: 10px;
+    outline: 3px solid $borderColour;
+    outline-offset: 5px;
+}
